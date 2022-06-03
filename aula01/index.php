@@ -19,9 +19,13 @@ $curso01 = new Curso();
 $curso01 ->nome = 'desenvolvimento Web';
 $curso01 ->duracao = 88;
 
+$curso02 = new Curso();
+$curso02 ->nome = 'UI/UX';
+$curso02 ->duracao = 105;
+
 $disciplina01 = new Disciplina();
 $disciplina01 ->nome = 'introdução ao HTML';
 $disciplina01 ->professorResponsavel = $professor01->nome;
-$disciplina01 ->cursoPresente = $curso01->nome;
+$disciplina01 ->cursoPresente[] = $curso01->nome; //tipo array 
 
 var_dump($disciplina01);

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 class Aluno //Clase
 {
-    public $nome; //Atributos
-    public $turma; //Atributos
-    public $cpf; //Atributos
+    public string $nome; //Atributos
+    public string $turma; //Atributos
+    public string $cpf; //Atributos
 }

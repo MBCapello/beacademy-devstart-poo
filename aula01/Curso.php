@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 class Curso 
 {
-    public $nome;
-    public $duracao;
-    public $conteudo;
+    public string $nome;
+    public int $duracao;
+    public array $conteudo;
 }
