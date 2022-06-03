@@ -1,22 +1,27 @@
 <?php
 
 include 'Aluno.php';
+include 'Professor.php';
+include 'Disciplina.php';
+include 'Curso.php';
 
-$a1 = new Aluno;
-$a1 -> nome = 'Alessandro';
-$a1 -> cpf = '111.222.333-45';
+$aluno01 = new Aluno();
+$aluno01 ->nome = 'Alessandro';
+$aluno01 ->turma = 'devStart';
+$aluno01 ->cpf = '111.222.333-45';
 
-$aluno1 = [
-    'nome' => 'Max',
-    'cpf' => '098.876.765-21',
+$professor01 = new Professor();
+$professor01 ->nome = 'Roberto';
+$professor01 ->materia = 'HTML/CSS';
+$professor01 ->salario = 2000;
 
-];
-$aluno2 = [
-    'nome' => 'Edu',
-    'CPF' => '011.823.995-29',
-];
+$curso01 = new Curso();
+$curso01 ->nome = 'desenvolvimento Web';
+$curso01 ->duracao = 88;
 
-$aluno3 = [
-    'Nome' => 'Ze',
-    'cpf' => '498.842.125-31',
-];
+$disciplina01 = new Disciplina();
+$disciplina01 ->nome = 'introdução ao HTML';
+$disciplina01 ->professorResponsavel = $professor01->nome;
+$disciplina01 ->cursoPresente = $curso01->nome;
+
+var_dump($disciplina01);
